@@ -42,6 +42,7 @@
     NSMutableArray *raceDataSourceArray;
     
     NSDictionary *raceCourses;
+    NSDictionary *countries;
 
 }
 
@@ -93,6 +94,11 @@
         raceCourses = dict[@"meeting"][daysDataSourceArray[i]][countriesDataSourceArray[i]];
         NSLog(@"raceCourses: %@", raceCourses);
         
+        countries = dict[@"meeting"][daysDataSourceArray[i]];
+        
+        NSDictionary *d = [countries objectForKey:countriesDataSourceArray[i]];
+        NSDictionary *dd = [[d allValues] firstObject];;
+        
         //raceCourses
         raceCoursesDataSourceArray = [NSMutableArray arrayWithArray:[raceCourses allKeys]];
         
@@ -128,12 +134,14 @@
 
 -(void)getRaceCoursePerCountry:(NSString *)countryName {
     
-    NSMutableArray *d = [[raceCourses allValues] mutableCopy];
+    //NSMutableArray *d = [[raceCourses allValues] mutableCopy];
     
-    if([[d valueForKey:countryName] isEqualToString:countryName]) {
-        NSArray *t = [NSMutableArray arrayWithArray:[raceCourses valueForKey:countryName]];
-        NSLog(@"courses in country = %@",t );
-    }
+    NSString *s = [raceCourses objectForKey:countryName];
+    
+//    if([[d valueForKey:countryName] isEqualToString:countryName]) {
+//        NSArray *t = [NSMutableArray arrayWithArray:[raceCourses valueForKey:countryName]];
+//        NSLog(@"courses in country = %@",t );
+//    }
     [self.raceCoursesCollectionView reloadData];
 }
     
