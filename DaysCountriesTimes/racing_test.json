@@ -1,0 +1,1405 @@
+{
+	"meeting": {
+		"Today": {
+			"UK": {
+				"Newbury": {
+					"race": [{
+							"sourceKey": "896522",
+							"raceTime": "2:15",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565097300000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896523",
+							"raceTime": "2:45",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565099100000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896524",
+							"raceTime": "3:20",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565101200000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "897141",
+							"raceTime": "3:50",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565103000000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896525",
+							"raceTime": "4:25",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565105100000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896526",
+							"raceTime": "4:55",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565106900000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896527",
+							"raceTime": "5:30",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565109000000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896528",
+							"raceTime": "6:05",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565111100000,
+							"completed": false,
+							"streamingAvailable": false
+						}
+					],
+					"subCatRef": "NBU",
+					"subCatName": "Newbury",
+					"country": "UK",
+					"going": "Good (Good to Firm in places)",
+					"featured": false
+				},
+				"Catterick": {
+					"race": [{
+							"sourceKey": "896543",
+							"raceTime": "2:00",
+							"status": "O",
+							"progressCode": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565096400000,
+							"completed": true,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252481,
+							"sourceKey": "896544",
+							"raceTime": "2:30",
+							"status": "O",
+							"earlyPrice": true,
+							"scheduledStart": 1565098200000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252538,
+							"sourceKey": "896545",
+							"raceTime": "3:05",
+							"status": "O",
+							"earlyPrice": true,
+							"scheduledStart": 1565100300000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252534,
+							"sourceKey": "896546",
+							"raceTime": "3:35",
+							"status": "O",
+							"earlyPrice": true,
+							"scheduledStart": 1565102100000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252521,
+							"sourceKey": "897142",
+							"raceTime": "4:10",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565104200000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252537,
+							"sourceKey": "896547",
+							"raceTime": "4:40",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565106000000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252499,
+							"sourceKey": "896548",
+							"raceTime": "5:10",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565107800000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252485,
+							"sourceKey": "896549",
+							"raceTime": "5:45",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565109900000,
+							"completed": false,
+							"streamingAvailable": false
+						}
+					],
+					"subCatRef": "CTT",
+					"subCatName": "Catterick",
+					"country": "UK",
+					"going": "Good to Soft",
+					"featured": false
+				}
+			},
+			"USA": {
+				"Fairmount Park": {
+					"race": [{
+							"eventId": 1252986,
+							"sourceKey": "897289",
+							"raceTime": "7:00",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565114400000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253004,
+							"sourceKey": "897290",
+							"raceTime": "7:29",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565116140000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252999,
+							"sourceKey": "897291",
+							"raceTime": "7:58",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565117880000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252982,
+							"sourceKey": "897292",
+							"raceTime": "8:27",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565119620000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252995,
+							"sourceKey": "897293",
+							"raceTime": "8:56",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565121360000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252980,
+							"sourceKey": "897294",
+							"raceTime": "9:25",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565123100000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252991,
+							"sourceKey": "897295",
+							"raceTime": "9:54",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565124840000,
+							"completed": false,
+							"streamingAvailable": false
+						}
+					],
+					"subCatRef": "XFP",
+					"subCatName": "Fairmount Park",
+					"country": "US",
+					"going": "Fast",
+					"featured": false
+				},
+				"Evangeline Downs": {
+					"race": [{
+							"eventId": 1253043,
+							"sourceKey": "897431",
+							"raceTime": "11:50",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565218200000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253062,
+							"sourceKey": "897472",
+							"raceTime": "12:18",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565219880000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253074,
+							"sourceKey": "897473",
+							"raceTime": "12:46",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565221560000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253046,
+							"sourceKey": "897474",
+							"raceTime": "1:14",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565223240000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253050,
+							"sourceKey": "897475",
+							"raceTime": "1:42",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565224920000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253077,
+							"sourceKey": "897476",
+							"raceTime": "2:10",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565226600000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253082,
+							"sourceKey": "897477",
+							"raceTime": "2:38",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565228280000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253057,
+							"sourceKey": "897478",
+							"raceTime": "3:06",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565229960000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253066,
+							"sourceKey": "897479",
+							"raceTime": "3:34",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565231640000,
+							"completed": false,
+							"streamingAvailable": false
+						}
+					],
+					"subCatRef": "QEV",
+					"subCatName": "Evangeline Downs",
+					"country": "US",
+					"going": "Fast",
+					"featured": false
+				}
+			}
+		},
+		"Tomorrow": {
+			"UK": {
+				"Newbury": {
+					"race": [{
+							"sourceKey": "896522",
+							"raceTime": "2:15",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565097300000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896523",
+							"raceTime": "2:45",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565099100000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896524",
+							"raceTime": "3:20",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565101200000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "897141",
+							"raceTime": "3:50",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565103000000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896525",
+							"raceTime": "4:25",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565105100000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896526",
+							"raceTime": "4:55",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565106900000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896527",
+							"raceTime": "5:30",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565109000000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896528",
+							"raceTime": "6:05",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565111100000,
+							"completed": false,
+							"streamingAvailable": false
+						}
+					],
+					"subCatRef": "NBU",
+					"subCatName": "Newbury",
+					"country": "UK",
+					"going": "Good (Good to Firm in places)",
+					"featured": false
+				},
+				"Catterick": {
+					"race": [{
+							"sourceKey": "896543",
+							"raceTime": "2:00",
+							"status": "O",
+							"progressCode": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565096400000,
+							"completed": true,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252481,
+							"sourceKey": "896544",
+							"raceTime": "2:30",
+							"status": "O",
+							"earlyPrice": true,
+							"scheduledStart": 1565098200000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252538,
+							"sourceKey": "896545",
+							"raceTime": "3:05",
+							"status": "O",
+							"earlyPrice": true,
+							"scheduledStart": 1565100300000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252534,
+							"sourceKey": "896546",
+							"raceTime": "3:35",
+							"status": "O",
+							"earlyPrice": true,
+							"scheduledStart": 1565102100000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252521,
+							"sourceKey": "897142",
+							"raceTime": "4:10",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565104200000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252537,
+							"sourceKey": "896547",
+							"raceTime": "4:40",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565106000000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252499,
+							"sourceKey": "896548",
+							"raceTime": "5:10",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565107800000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252485,
+							"sourceKey": "896549",
+							"raceTime": "5:45",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565109900000,
+							"completed": false,
+							"streamingAvailable": false
+						}
+					],
+					"subCatRef": "CTT",
+					"subCatName": "Catterick",
+					"country": "UK",
+					"going": "Good to Soft",
+					"featured": false
+				}
+			},
+			"USA": {
+				"Fairmount Park": {
+					"race": [{
+							"eventId": 1252986,
+							"sourceKey": "897289",
+							"raceTime": "7:00",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565114400000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253004,
+							"sourceKey": "897290",
+							"raceTime": "7:29",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565116140000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252999,
+							"sourceKey": "897291",
+							"raceTime": "7:58",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565117880000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252982,
+							"sourceKey": "897292",
+							"raceTime": "8:27",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565119620000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252995,
+							"sourceKey": "897293",
+							"raceTime": "8:56",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565121360000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252980,
+							"sourceKey": "897294",
+							"raceTime": "9:25",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565123100000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252991,
+							"sourceKey": "897295",
+							"raceTime": "9:54",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565124840000,
+							"completed": false,
+							"streamingAvailable": false
+						}
+					],
+					"subCatRef": "XFP",
+					"subCatName": "Fairmount Park",
+					"country": "US",
+					"going": "Fast",
+					"featured": false
+				},
+				"Evangeline Downs": {
+					"race": [{
+							"eventId": 1253043,
+							"sourceKey": "897431",
+							"raceTime": "11:50",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565218200000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253062,
+							"sourceKey": "897472",
+							"raceTime": "12:18",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565219880000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253074,
+							"sourceKey": "897473",
+							"raceTime": "12:46",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565221560000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253046,
+							"sourceKey": "897474",
+							"raceTime": "1:14",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565223240000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253050,
+							"sourceKey": "897475",
+							"raceTime": "1:42",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565224920000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253077,
+							"sourceKey": "897476",
+							"raceTime": "2:10",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565226600000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253082,
+							"sourceKey": "897477",
+							"raceTime": "2:38",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565228280000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253057,
+							"sourceKey": "897478",
+							"raceTime": "3:06",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565229960000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253066,
+							"sourceKey": "897479",
+							"raceTime": "3:34",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565231640000,
+							"completed": false,
+							"streamingAvailable": false
+						}
+					],
+					"subCatRef": "QEV",
+					"subCatName": "Evangeline Downs",
+					"country": "US",
+					"going": "Fast",
+					"featured": false
+				}
+			}
+		},
+		"Thursday": {
+			"UK": {
+				"Newbury": {
+					"race": [{
+							"sourceKey": "896522",
+							"raceTime": "2:15",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565097300000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896523",
+							"raceTime": "2:45",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565099100000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896524",
+							"raceTime": "3:20",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565101200000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "897141",
+							"raceTime": "3:50",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565103000000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896525",
+							"raceTime": "4:25",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565105100000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896526",
+							"raceTime": "4:55",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565106900000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896527",
+							"raceTime": "5:30",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565109000000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896528",
+							"raceTime": "6:05",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565111100000,
+							"completed": false,
+							"streamingAvailable": false
+						}
+					],
+					"subCatRef": "NBU",
+					"subCatName": "Newbury",
+					"country": "UK",
+					"going": "Good (Good to Firm in places)",
+					"featured": false
+				},
+				"Catterick": {
+					"race": [{
+							"sourceKey": "896543",
+							"raceTime": "2:00",
+							"status": "O",
+							"progressCode": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565096400000,
+							"completed": true,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252481,
+							"sourceKey": "896544",
+							"raceTime": "2:30",
+							"status": "O",
+							"earlyPrice": true,
+							"scheduledStart": 1565098200000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252538,
+							"sourceKey": "896545",
+							"raceTime": "3:05",
+							"status": "O",
+							"earlyPrice": true,
+							"scheduledStart": 1565100300000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252534,
+							"sourceKey": "896546",
+							"raceTime": "3:35",
+							"status": "O",
+							"earlyPrice": true,
+							"scheduledStart": 1565102100000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252521,
+							"sourceKey": "897142",
+							"raceTime": "4:10",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565104200000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252537,
+							"sourceKey": "896547",
+							"raceTime": "4:40",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565106000000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252499,
+							"sourceKey": "896548",
+							"raceTime": "5:10",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565107800000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252485,
+							"sourceKey": "896549",
+							"raceTime": "5:45",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565109900000,
+							"completed": false,
+							"streamingAvailable": false
+						}
+					],
+					"subCatRef": "CTT",
+					"subCatName": "Catterick",
+					"country": "UK",
+					"going": "Good to Soft",
+					"featured": false
+				}
+			},
+			"USA": {
+				"Fairmount Park": {
+					"race": [{
+							"eventId": 1252986,
+							"sourceKey": "897289",
+							"raceTime": "7:00",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565114400000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253004,
+							"sourceKey": "897290",
+							"raceTime": "7:29",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565116140000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252999,
+							"sourceKey": "897291",
+							"raceTime": "7:58",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565117880000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252982,
+							"sourceKey": "897292",
+							"raceTime": "8:27",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565119620000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252995,
+							"sourceKey": "897293",
+							"raceTime": "8:56",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565121360000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252980,
+							"sourceKey": "897294",
+							"raceTime": "9:25",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565123100000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252991,
+							"sourceKey": "897295",
+							"raceTime": "9:54",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565124840000,
+							"completed": false,
+							"streamingAvailable": false
+						}
+					],
+					"subCatRef": "XFP",
+					"subCatName": "Fairmount Park",
+					"country": "US",
+					"going": "Fast",
+					"featured": false
+				},
+				"Evangeline Downs": {
+					"race": [{
+							"eventId": 1253043,
+							"sourceKey": "897431",
+							"raceTime": "11:50",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565218200000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253062,
+							"sourceKey": "897472",
+							"raceTime": "12:18",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565219880000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253074,
+							"sourceKey": "897473",
+							"raceTime": "12:46",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565221560000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253046,
+							"sourceKey": "897474",
+							"raceTime": "1:14",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565223240000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253050,
+							"sourceKey": "897475",
+							"raceTime": "1:42",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565224920000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253077,
+							"sourceKey": "897476",
+							"raceTime": "2:10",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565226600000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253082,
+							"sourceKey": "897477",
+							"raceTime": "2:38",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565228280000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253057,
+							"sourceKey": "897478",
+							"raceTime": "3:06",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565229960000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253066,
+							"sourceKey": "897479",
+							"raceTime": "3:34",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565231640000,
+							"completed": false,
+							"streamingAvailable": false
+						}
+					],
+					"subCatRef": "QEV",
+					"subCatName": "Evangeline Downs",
+					"country": "US",
+					"going": "Fast",
+					"featured": false
+				}
+			}
+		},
+		"Friday": {
+			"UK": {
+				"Newbury": {
+					"race": [{
+							"sourceKey": "896522",
+							"raceTime": "2:15",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565097300000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896523",
+							"raceTime": "2:45",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565099100000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896524",
+							"raceTime": "3:20",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565101200000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "897141",
+							"raceTime": "3:50",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565103000000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896525",
+							"raceTime": "4:25",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565105100000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896526",
+							"raceTime": "4:55",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565106900000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896527",
+							"raceTime": "5:30",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565109000000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"sourceKey": "896528",
+							"raceTime": "6:05",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565111100000,
+							"completed": false,
+							"streamingAvailable": false
+						}
+					],
+					"subCatRef": "NBU",
+					"subCatName": "Newbury",
+					"country": "UK",
+					"going": "Good (Good to Firm in places)",
+					"featured": false
+				},
+				"Catterick": {
+					"race": [{
+							"sourceKey": "896543",
+							"raceTime": "2:00",
+							"status": "O",
+							"progressCode": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565096400000,
+							"completed": true,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252481,
+							"sourceKey": "896544",
+							"raceTime": "2:30",
+							"status": "O",
+							"earlyPrice": true,
+							"scheduledStart": 1565098200000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252538,
+							"sourceKey": "896545",
+							"raceTime": "3:05",
+							"status": "O",
+							"earlyPrice": true,
+							"scheduledStart": 1565100300000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252534,
+							"sourceKey": "896546",
+							"raceTime": "3:35",
+							"status": "O",
+							"earlyPrice": true,
+							"scheduledStart": 1565102100000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252521,
+							"sourceKey": "897142",
+							"raceTime": "4:10",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565104200000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252537,
+							"sourceKey": "896547",
+							"raceTime": "4:40",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565106000000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252499,
+							"sourceKey": "896548",
+							"raceTime": "5:10",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565107800000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252485,
+							"sourceKey": "896549",
+							"raceTime": "5:45",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565109900000,
+							"completed": false,
+							"streamingAvailable": false
+						}
+					],
+					"subCatRef": "CTT",
+					"subCatName": "Catterick",
+					"country": "UK",
+					"going": "Good to Soft",
+					"featured": false
+				}
+			},
+			"USA": {
+				"Fairmount Park": {
+					"race": [{
+							"eventId": 1252986,
+							"sourceKey": "897289",
+							"raceTime": "7:00",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565114400000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253004,
+							"sourceKey": "897290",
+							"raceTime": "7:29",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565116140000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252999,
+							"sourceKey": "897291",
+							"raceTime": "7:58",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565117880000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252982,
+							"sourceKey": "897292",
+							"raceTime": "8:27",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565119620000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252995,
+							"sourceKey": "897293",
+							"raceTime": "8:56",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565121360000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252980,
+							"sourceKey": "897294",
+							"raceTime": "9:25",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565123100000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1252991,
+							"sourceKey": "897295",
+							"raceTime": "9:54",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565124840000,
+							"completed": false,
+							"streamingAvailable": false
+						}
+					],
+					"subCatRef": "XFP",
+					"subCatName": "Fairmount Park",
+					"country": "US",
+					"going": "Fast",
+					"featured": false
+				},
+				"Evangeline Downs": {
+					"race": [{
+							"eventId": 1253043,
+							"sourceKey": "897431",
+							"raceTime": "11:50",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565218200000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253062,
+							"sourceKey": "897472",
+							"raceTime": "12:18",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565219880000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253074,
+							"sourceKey": "897473",
+							"raceTime": "12:46",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565221560000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253046,
+							"sourceKey": "897474",
+							"raceTime": "1:14",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565223240000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253050,
+							"sourceKey": "897475",
+							"raceTime": "1:42",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565224920000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253077,
+							"sourceKey": "897476",
+							"raceTime": "2:10",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565226600000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253082,
+							"sourceKey": "897477",
+							"raceTime": "2:38",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565228280000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253057,
+							"sourceKey": "897478",
+							"raceTime": "3:06",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565229960000,
+							"completed": false,
+							"streamingAvailable": false
+						},
+						{
+							"eventId": 1253066,
+							"sourceKey": "897479",
+							"raceTime": "3:34",
+							"status": "O",
+							"earlyPrice": false,
+							"scheduledStart": 1565231640000,
+							"completed": false,
+							"streamingAvailable": false
+						}
+					],
+					"subCatRef": "QEV",
+					"subCatName": "Evangeline Downs",
+					"country": "US",
+					"going": "Fast",
+					"featured": false
+				}
+			}
+		}
+	}
+
+}
