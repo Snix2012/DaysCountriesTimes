@@ -15,6 +15,9 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *raceCoursesCollectionView;
 @property (weak, nonatomic) IBOutlet UICollectionView *racesCollectionView;
 
+@property (weak, nonatomic) IBOutlet UILabel *raceCourseNameLbl;
+@property (weak, nonatomic) IBOutlet UIView *raceInfoContainerView;
+
 @property (nonatomic, retain) NSIndexPath *daysSelectedIndexPath;
 @property (nonatomic, retain) NSIndexPath *countrySelectedIndexPath;
 @property (nonatomic, retain) NSIndexPath *coursesSelectedIndexPath;
