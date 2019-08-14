@@ -12,8 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *dataLabel;
 
--(void)setCellSelected;
--(void)setCellDeselected;
+- (void)styleSelected:(BOOL)selected ;
 
 @end
 

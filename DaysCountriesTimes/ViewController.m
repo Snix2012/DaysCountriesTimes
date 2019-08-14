@@ -43,6 +43,10 @@
     coursePerCountry = [[NSMutableArray alloc]init];
     raceCourses = [[NSMutableDictionary alloc]init];
     
+    _daysCollectionView.allowsMultipleSelection = NO;
+    _countriesCollectionView.allowsMultipleSelection = NO;
+    _raceCoursesCollectionView.allowsMultipleSelection = NO;
+    
     [self parseJson];
 }
 
@@ -55,15 +59,20 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:0 inSection:0];
-    [self.daysCollectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
-    [self collectionView:self.daysCollectionView didSelectItemAtIndexPath:indexPath];
-    
-    [self.countriesCollectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
-    [self collectionView:self.countriesCollectionView didSelectItemAtIndexPath:indexPath];
+//    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:0 inSection:0];
+//    [self.daysCollectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
+//    [self collectionView:self.daysCollectionView didSelectItemAtIndexPath:indexPath];
+//    
+//    [self.countriesCollectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
+//    [self collectionView:self.countriesCollectionView didSelectItemAtIndexPath:indexPath];
 
 }
 
+- (NSDictionary *)getJSONFromFile {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"racing_test" ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    return[NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+}
 
 -(void)parseJson {
     
@@ -85,11 +94,33 @@
     countriesDataSourceArray = [countriesDataSourceArray valueForKeyPath:@"@distinctUnionOfObjects.self"];
     raceCoursesDataSourceArray = [raceCoursesDataSourceArray valueForKeyPath:@"@distinctUnionOfObjects.self"];
     
+    for(NSDictionary *d in allRaceItemArray){
+        NSString *countryName = d[@"country"];
+        [self getRaceCoursePerCountry:countryName];
+    }
+    
+    [self groupRaceItemsByDate];
+}
+
+-(void)groupRaceItemsByDate {
+    
+    NSMutableDictionary *racesByDateDic = [[NSMutableDictionary alloc]init];
+    NSMutableArray *arr =[[NSMutableArray alloc]init];
+    for(NSString *s in daysDataSourceArray){
+        [racesByDateDic setValue:s forKey:@"raceDate"];
+        for(NSDictionary *d in allRaceItemArray){
+            
+            if([d[@"date"] isEqualToString:s]){
+                [arr addObject:d];
+            }
+        }
+    }
+    [racesByDateDic setValue:arr forKey:@"racesForDate"];
     
 }
 
 -(void)getRaceCoursePerCountry:(NSString *)countryName {
-    
+
     NSMutableDictionary *dict = [[NSMutableDictionary alloc]init];
     NSMutableArray *temp = [[NSMutableArray alloc]init];
     
@@ -99,19 +130,40 @@
         if([dict[@"country"] isEqualToString:countryName]) {
             [temp addObject:dict];
         }
-        [raceCourses setValue:temp forKey:countryName];
+        [countries setValue:temp forKey:countryName];
     }
     
     NSArray *arr = [[raceCourses allValues] objectAtIndex:0];
     NSMutableDictionary *d  = [[NSMutableDictionary alloc]init];
-    for(int i = 0; i < arr.count; i++) {
+    for(int i = 0; i < countries.count; i++) {
         d = [arr objectAtIndex:i];
         NSString *s = d[@"subCatName"];
         [coursePerCountry addObject:s];
     }
+    
 }
 
-    
+//-(void)sortByDate {
+//
+//    NSMutableDictionary *dict = [[NSMutableDictionary alloc]init];
+//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+//
+//    for(int i = 0; i < allRaceItemArray.count; i++) {
+//        dict = [allRaceItemArray objectAtIndex:i];
+//        NSString *dateString = dict[@"date"];
+//        NSDate *date = [dateFormatter dateFromString:dateString];
+//        [dict setValue:date forKey:@"date"];
+//
+//    }
+//
+//
+//    [allRaceItemArray sortUsingComparator:^NSComparisonResult(NSDate *d1, NSDate *d2){
+//        return [d1 compare:d2];
+//    }];
+//
+//}
+
 -(void)setRaceCourseNameLblText {
     
     NSString *day = @"";
@@ -132,12 +184,6 @@
 }
 
 
-- (NSDictionary *)getJSONFromFile {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"racing_test" ofType:@"json"];
-    NSData *data = [NSData dataWithContentsOfFile:path];
-    return[NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-}
-
 #pragma mark - CollectionView
 - (UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
     CustomCollectionViewCell *cell;
@@ -150,8 +196,7 @@
         cell.dataLabel.text = [countriesDataSourceArray objectAtIndex:indexPath.row];
     } if(collectionView == self.raceCoursesCollectionView) {
         cell = (CustomCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"raceCourceCell" forIndexPath:indexPath];
-        NSString *country = [coursePerCountry objectAtIndex:indexPath.row];
-        cell.dataLabel.text = country;
+        cell.dataLabel.text = [coursePerCountry objectAtIndex:indexPath.row];
     } if(collectionView == self.racesCollectionView) {
         cell = (CustomCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"raceTimeCell" forIndexPath:indexPath];
         cell.dataLabel.text = [raceDataSourceArray objectAtIndex:indexPath.row];
@@ -168,7 +213,8 @@
     } else if(collectionView == self.countriesCollectionView) {
         sections = countriesDataSourceArray.count;
     } else if(collectionView == self.raceCoursesCollectionView) {
-        sections = raceCoursesDataSourceArray.count;
+       [self getRaceCoursePerCountry:[countriesDataSourceArray objectAtIndex:0]];
+        sections = coursePerCountry.count;
     } else if(collectionView == self.racesCollectionView) {
         sections = raceDataSourceArray.count;
     }
@@ -179,8 +225,6 @@
     
     NSLog(@"INDEXPATH:-%ld",(long)indexPath.row);
     CustomCollectionViewCell *cell = (CustomCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    
-    [cell setCellSelected];
 
     if(collectionView == self.daysCollectionView) {
          self.daysSelectedIndexPath = indexPath;
@@ -196,11 +240,20 @@
 
 }
 
+//- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    if ([collectionView.indexPathsForSelectedItems containsObject: indexPath])
+//    {
+//        [collectionView deselectItemAtIndexPath: indexPath animated: YES];
+//        return NO;
+//    }
+//    return YES;
+//}
+
 -(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     CustomCollectionViewCell *cell = (CustomCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    [cell setCellDeselected];
-    
+ 
     [self clearSelectedIndexPaths];
 }
 
@@ -218,6 +271,9 @@ minimumInteritemSpacingForSectionAtIndex:(NSInteger) section {
 
 
 /*
+ NSDictionary *singleEvent = [eventArray objectAtIndex:0];
+ [self updateWithDictionary:singleEvent];
+ 
  NSDateFormatter *dateformatter=[[NSDateFormatter alloc]init];
  [dateformatter setLocale:[NSLocale currentLocale]];
  [dateformatter setDateFormat:@"dd-MM-yyyy"];

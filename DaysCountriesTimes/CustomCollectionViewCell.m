@@ -13,19 +13,16 @@
 -(void)awakeFromNib {
     [super awakeFromNib];
     
-    [self setCellDeselected];
     self.layer.cornerRadius = 10;
     self.contentView.backgroundColor = [UIColor whiteColor];
 }
 
--(void)setCellSelected {
-    self.layer.borderColor = [UIColor redColor].CGColor;
-    self.layer.borderWidth = 3;
-}
+- (void)styleSelected:(BOOL)selected {
 
--(void)setCellDeselected {
-     self.layer.borderColor = [UIColor lightGrayColor].CGColor;
-     self.layer.borderWidth = 1;
+    self.layer.borderColor = selected ? [UIColor redColor].CGColor : [UIColor lightGrayColor].CGColor;
+    self.layer.borderWidth = selected ? 3 : 1;
+    
+    self.selectedBackgroundView.backgroundColor = selected ? [UIColor yellowColor] : [UIColor clearColor];
 }
 
 @end
