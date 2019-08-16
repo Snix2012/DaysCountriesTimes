@@ -15,7 +15,7 @@
 
 @implementation ViewController {
     
-    NSMutableArray *allRaceItemArray;
+    NSMutableArray *meeting;
     NSMutableArray *daysDataSourceArray;
     NSMutableArray *countriesDataSourceArray;
     NSMutableArray *raceCoursesDataSourceArray;
@@ -35,13 +35,15 @@
     self.raceInfoContainerView.layer.cornerRadius = 20;
     [self clearSelectedIndexPaths];
     
-    allRaceItemArray = [[NSMutableArray alloc]init];
+    meeting = [[NSMutableArray alloc]init];
     daysDataSourceArray = [[NSMutableArray alloc]init];
     countriesDataSourceArray = [[NSMutableArray alloc]init];
     raceCoursesDataSourceArray = [[NSMutableArray alloc]init];
     raceDataSourceArray = [[NSMutableArray alloc]init];
     coursePerCountry = [[NSMutableArray alloc]init];
     raceCourses = [[NSMutableDictionary alloc]init];
+    
+    countries = [[NSMutableDictionary alloc]init];
     
     _daysCollectionView.allowsMultipleSelection = NO;
     _countriesCollectionView.allowsMultipleSelection = NO;
@@ -79,36 +81,61 @@
     NSDictionary *dict = [self getJSONFromFile];
     NSLog(@"JSON: %@", dict);
     
-    NSArray *data = [NSMutableArray arrayWithArray:dict[@"meeting"]];
-    NSLog(@"data: %@", data);
+    meeting = [NSMutableArray arrayWithArray:dict[@"response"][@"meeting"]];
+    NSLog(@"meeting: %@", meeting);
     
-    for(NSDictionary *d in data) {
-
-        [allRaceItemArray addObject:d];
-        [daysDataSourceArray addObject:d[@"date"]];
-        [countriesDataSourceArray addObject:d[@"country"]];
-        [raceCoursesDataSourceArray addObject:d[@"subCatName"]];
+    for(int i = 0; i < meeting.count;  i ++) {
+        NSDictionary *meetingData = [meeting objectAtIndex:i];
+        [daysDataSourceArray addObject:meetingData[@"date"]];
+        [countriesDataSourceArray addObject:meetingData[@"country"]];
+        [raceCoursesDataSourceArray addObject:meetingData[@"subCatName"]];
+        
+        if(i == meeting.count - 1) {
+            daysDataSourceArray = [daysDataSourceArray valueForKeyPath:@"@distinctUnionOfObjects.self"];
+            countriesDataSourceArray = [countriesDataSourceArray valueForKeyPath:@"@distinctUnionOfObjects.self"];
+            raceCoursesDataSourceArray = [raceCoursesDataSourceArray valueForKeyPath:@"@distinctUnionOfObjects.self"];
+            
+            for(NSString *countryName in countriesDataSourceArray){
+                [self getRaceCoursePerCountry:countryName];
+            }
+        }
     }
-
-    daysDataSourceArray = [daysDataSourceArray valueForKeyPath:@"@distinctUnionOfObjects.self"];
-    countriesDataSourceArray = [countriesDataSourceArray valueForKeyPath:@"@distinctUnionOfObjects.self"];
-    raceCoursesDataSourceArray = [raceCoursesDataSourceArray valueForKeyPath:@"@distinctUnionOfObjects.self"];
-    
-    for(NSDictionary *d in allRaceItemArray){
-        NSString *countryName = d[@"country"];
-        [self getRaceCoursePerCountry:countryName];
-    }
-    
+ 
     [self groupRaceItemsByDate];
+}
+
+-(void)getRaceCoursePerCountry:(NSString *)countryName {
+    
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc]init];
+    NSMutableArray *temp = [[NSMutableArray alloc]init];
+    
+    for(int i = 0; i < meeting.count; i++) {
+        
+        dict = [meeting objectAtIndex:i];
+        if([dict[@"country"] isEqualToString:countryName]) {
+            [temp addObject:dict];
+        }
+    }
+    [countries setValue:temp forKey:countryName];
+    
+//    NSArray *arr = [[raceCourses allValues] objectAtIndex:0];
+//    NSMutableDictionary *d  = [[NSMutableDictionary alloc]init];
+//    for(int i = 0; i < countries.count; i++) {
+//        d = [arr objectAtIndex:i];
+//        NSString *s = d[@"subCatName"];
+//        [coursePerCountry addObject:s];
+//    }
+    
 }
 
 -(void)groupRaceItemsByDate {
     
     NSMutableDictionary *racesByDateDic = [[NSMutableDictionary alloc]init];
     NSMutableArray *arr =[[NSMutableArray alloc]init];
-    for(NSString *s in daysDataSourceArray){
+    
+    for(NSString *s in meeting){
         [racesByDateDic setValue:s forKey:@"raceDate"];
-        for(NSDictionary *d in allRaceItemArray){
+        for(NSDictionary *d in meeting){
             
             if([d[@"date"] isEqualToString:s]){
                 [arr addObject:d];
@@ -116,31 +143,6 @@
         }
     }
     [racesByDateDic setValue:arr forKey:@"racesForDate"];
-    
-}
-
--(void)getRaceCoursePerCountry:(NSString *)countryName {
-
-    NSMutableDictionary *dict = [[NSMutableDictionary alloc]init];
-    NSMutableArray *temp = [[NSMutableArray alloc]init];
-    
-    for(int i = 0; i < allRaceItemArray.count; i++) {
-        
-        dict = [allRaceItemArray objectAtIndex:i];
-        if([dict[@"country"] isEqualToString:countryName]) {
-            [temp addObject:dict];
-        }
-        [countries setValue:temp forKey:countryName];
-    }
-    
-    NSArray *arr = [[raceCourses allValues] objectAtIndex:0];
-    NSMutableDictionary *d  = [[NSMutableDictionary alloc]init];
-    for(int i = 0; i < countries.count; i++) {
-        d = [arr objectAtIndex:i];
-        NSString *s = d[@"subCatName"];
-        [coursePerCountry addObject:s];
-    }
-    
 }
 
 //-(void)sortByDate {
@@ -225,7 +227,8 @@
     
     NSLog(@"INDEXPATH:-%ld",(long)indexPath.row);
     CustomCollectionViewCell *cell = (CustomCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-
+    [cell styleSelected:YES];
+    
     if(collectionView == self.daysCollectionView) {
          self.daysSelectedIndexPath = indexPath;
     } else if(collectionView == self.countriesCollectionView) {
@@ -253,7 +256,7 @@
 -(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     CustomCollectionViewCell *cell = (CustomCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
- 
+    [cell styleSelected:NO];
     [self clearSelectedIndexPaths];
 }
 

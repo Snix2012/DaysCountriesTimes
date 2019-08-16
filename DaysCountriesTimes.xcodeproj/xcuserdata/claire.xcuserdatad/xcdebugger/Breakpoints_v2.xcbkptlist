@@ -10,59 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DaysCountriesTimes/ViewController.m"
-            timestampString = "587492797.340933"
+            timestampString = "587664910.015303"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "-parseJson"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ViewController parseJson]"
-                  moduleName = "DaysCountriesTimes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/claire/Developer/DaysCountriesTimes/DaysCountriesTimes/ViewController.m"
-                  timestampString = "587491958.28555"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "97"
-                  endingLineNumber = "97"
-                  offsetFromSymbolStart = "1248">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ViewController parseJson]"
-                  moduleName = "DaysCountriesTimes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/claire/Developer/DaysCountriesTimes/DaysCountriesTimes/ViewController.m"
-                  timestampString = "587491958.28767"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "97"
-                  endingLineNumber = "97"
-                  offsetFromSymbolStart = "1280">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DaysCountriesTimes/ViewController.m"
-            timestampString = "587492797.341246"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "256"
-            endingLineNumber = "256"
+            startingLineNumber = "259"
+            endingLineNumber = "259"
             landmarkName = "-collectionView:didDeselectItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DaysCountriesTimes/ViewController.m"
-            timestampString = "587492797.341464"
+            timestampString = "587664910.0156519"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
             landmarkName = "-collectionView:cellForItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "Yes"
             filePath = "DaysCountriesTimes/CustomCollectionViewCell.m"
-            timestampString = "587481312.272805"
+            timestampString = "587664284.581036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -115,11 +67,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DaysCountriesTimes/ViewController.m"
-            timestampString = "587492797.34168"
+            timestampString = "587664910.015896"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "-groupRaceItemsByDate"
             landmarkType = "7">
          </BreakpointContent>
@@ -131,11 +83,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DaysCountriesTimes/ViewController.m"
-            timestampString = "587492797.341879"
+            timestampString = "587664910.016124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "-parseJson"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DaysCountriesTimes/ViewController.m"
+            timestampString = "587664910.016323"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "-getRaceCoursePerCountry:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DaysCountriesTimes/ViewController.m"
+            timestampString = "587664910.016524"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "-getRaceCoursePerCountry:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DaysCountriesTimes/ViewController.m"
+            timestampString = "587664910.016721"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "-getRaceCoursePerCountry:"
             landmarkType = "7">
          </BreakpointContent>
